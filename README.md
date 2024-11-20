@@ -41,3 +41,6 @@ This project is a platform to showcase quantitative trading strategies and data 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/repository-name.git
+2. 
+   ```bash
+   . start.sh
