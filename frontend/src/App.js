@@ -10,7 +10,7 @@ function App() {
   }, []); 
   return (
     <div>
-      <h1>Quant Trading Strategies</h1>
+      <h1>Quant Trading Strategies - Test</h1>
       <ul>
         {strategies.map(strategy => (
           <li key={strategy.id}>{strategy.name}</li>
