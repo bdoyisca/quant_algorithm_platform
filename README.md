@@ -41,6 +41,20 @@ This project is a platform to showcase quantitative trading strategies and data 
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/repository-name.git
-2. 
+   ```
+2. Initialization (Before the first run of the application)
    ```bash
-   . start.sh
+   source init.sh
+   ```
+   All dependencies will be installed automatically after running this code.
+3. Start the application
+   ```bash
+   source start.sh
+   ```
+
+## Remarks
+1. Add new dependencies
+   ```bash
+   pip freeze > requirements.txt
+   ```
+   After installing new python libraries in venv, run this code to add the dependent libraries in requirements.txt
