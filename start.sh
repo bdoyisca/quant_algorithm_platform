@@ -2,6 +2,7 @@
 
 # Start backend
 echo "Starting Python backend..."
+source backend/venv/bin/activate
 python backend/app.py & 
 BACKEND_PID=$!
 

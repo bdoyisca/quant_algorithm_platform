@@ -1,5 +1,13 @@
 #!/bin/bash
 
+## Frontend
+
+# Install npm packages
+
+npm install
+
+## Backend
+
 # 项目根目录（可以根据需要修改）
 PROJECT_DIR=$(pwd)
 VENV_DIR="$PROJECT_DIR/backend/venv"
@@ -40,19 +48,19 @@ if [ -f "$REQUIREMENTS_FILE" ]; then
     pip install --upgrade pip
     pip install -r "$REQUIREMENTS_FILE"
     if [ $? -eq 0 ]; then
-        echo "依赖安装成功。"
+        echo "Dependencies installation success!"
     else
-        echo "依赖安装失败，请检查 requirements.txt 文件格式和网络连接。"
+        echo "Dependencies installation failed, please check the network and the file 'requirements.txt'!"
         exit 1
     fi
 else
-    echo "未检测到 requirements.txt，跳过依赖安装。"
+    echo "'requirements.txt' not detected, skip install the dependencies"
 fi
 
 source backend/venv/bin/activate
 
 # 完成
-echo "虚拟环境已准备好，可以使用了！"
-echo "要退出虚拟环境，请运行 'deactivate'。"
+echo "Python virtual environment (venv) prepared."
+echo "If you want to exit (venv), please execute 'deactivate'"
 
 
