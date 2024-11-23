@@ -57,7 +57,9 @@ else
     echo "'requirements.txt' not detected, skip install the dependencies"
 fi
 
+# Install ibapi
 source backend/venv/bin/activate
+python backend/special_dependencies/ibapi/IBJts/source/pythonclient/setup.py install
 
 # 完成
 echo "Python virtual environment (venv) prepared."
