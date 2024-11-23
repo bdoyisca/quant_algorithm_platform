@@ -4,7 +4,9 @@
 
 # Install npm packages
 
+cd frontend
 npm install
+cd ..
 
 ## Backend
 
@@ -59,10 +61,10 @@ fi
 
 # Install ibapi
 source backend/venv/bin/activate
-python backend/special_dependencies/ibapi/IBJts/source/pythonclient/setup.py install
+cd backend/special_dependencies/ibapi/IBJts/source/pythonclient/
+python setup.py install
+cd ../../../../../..
 
 # 完成
 echo "Python virtual environment (venv) prepared."
 echo "If you want to exit (venv), please execute 'deactivate'"
-
-
